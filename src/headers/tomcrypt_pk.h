@@ -398,7 +398,6 @@ int  ecc_verify_hash(const unsigned char *sig,  unsigned long siglen,
 /* low level functions */
 ecc_point *ltc_ecc_new_point(void);
 void       ltc_ecc_del_point(ecc_point *p);
-int        ltc_ecc_is_valid_idx(int n);
 int        ltc_ecc_is_point(const ltc_ecc_dp *dp, void *x, void *y);
 int        ltc_ecc_is_point_at_infinity(const ecc_point *p, void *modulus);
 int        ltc_ecc_import_point(const unsigned char *in, unsigned long inlen, void *prime, void *a, void *b, void *x, void *y);
