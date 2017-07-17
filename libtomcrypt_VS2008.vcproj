@@ -2243,10 +2243,6 @@
 					>
 				</File>
 				<File
-					RelativePath="src\pk\ecc\ltc_ecc_is_valid_idx.c"
-					>
-				</File>
-				<File
 					RelativePath="src\pk\ecc\ltc_ecc_map.c"
 					>
 				</File>
