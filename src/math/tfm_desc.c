@@ -434,7 +434,7 @@ static int isprime(void *a, int b, int *c)
 
 #if defined(LTC_MECC) && defined(LTC_MECC_ACCEL)
 
-static int tfm_ecc_projective_dbl_point(ecc_point *P, ecc_point *R, void *ma, void *modulus, void *Mp)
+static int tfm_ecc_projective_dbl_point(const ecc_point *P, ecc_point *R, void *ma, void *modulus, void *Mp)
 {
    fp_int t1, t2;
    fp_digit mp;
@@ -560,7 +560,7 @@ static int tfm_ecc_projective_dbl_point(ecc_point *P, ecc_point *R, void *ma, vo
    @param mp       The "b" value from montgomery_setup()
    @return CRYPT_OK on success
 */
-static int tfm_ecc_projective_add_point(ecc_point *P, ecc_point *Q, ecc_point *R, void *ma, void *modulus, void *Mp)
+static int tfm_ecc_projective_add_point(const ecc_point *P, const ecc_point *Q, ecc_point *R, void *ma, void *modulus, void *Mp) 
 {
    fp_int  t1, t2, x, y, z;
    fp_digit mp;
